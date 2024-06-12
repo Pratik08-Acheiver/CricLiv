@@ -1,0 +1,17 @@
+<div class="">
+
+    <h1 class="text-4xl font-extrabold text-gray-700">Match Last History Snapshot</h1>
+    <div class="card-container flex-wrap flex-col md:flex-row flex">
+    @for (match of allMatch; track $index) {
+        <div class=" p-2 md:w-[25%] w-full">
+            <app-match-card [match]="match"></app-match-card>
+        </div>
+        <!-- {{match.matchHeading}} -->
+    }
+    @empty {
+        There is no match Today!! Keep visiting to stay updated.
+    }
+</div>
+
+</div>
+

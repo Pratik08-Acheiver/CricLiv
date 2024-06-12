@@ -1,0 +1,22 @@
+<header class="bg-blue-800 text-white">
+  <div class="container mx-auto flex justify-around items-center py-4">
+    <!-- Brand Name -->
+     <!-- type cmd ng serve to start angular project -->
+    <div class="text-2xl font-bold">
+      CricLIV
+    </div>
+    <!-- Menu Items -->
+    <nav class="space-x-4">
+      <a [routerLink]="'/home'" class="text-lg hover:text-blue-300">Home</a>
+      <a [routerLink]="'/live'" class="text-lg hover:text-blue-300">Live Matches</a>
+      <a [routerLink]="'/history'" class="text-lg hover:text-blue-300">History</a>
+      <a [routerLink]="'/point-table'" class="text-lg hover:text-blue-300">Point Table</a>
+    </nav>
+    <div></div>
+  </div>
+  
+</header>
+<div class="px-16 py-8">
+  <router-outlet></router-outlet>
+</div>
+  
